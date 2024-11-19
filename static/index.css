@@ -1,0 +1,110 @@
+body {
+    /** define custom properties so we can reference and change styles easily */
+    --accent-background: #54a0ff;
+    --accent-background-text: #073164;
+    --accent-text: #2e86de;
+    --gray: #eee;
+    --dark-gray: #ccc;
+    --darkest-gray: #aaa;
+    --black: #333;
+    color: var(--black);
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex; /* Enable flexbox */
+    height: 100vh; /* Full height of viewport */
+}
+
+aside {
+    display: flex;                /* Enable flexbox */
+    flex-direction: column;       /* Stack items vertically */
+    align-items: center;          /* Center items horizontally */
+    justify-content: center;      /* Center items vertically */         
+    width: 600px;                 /* stretch the aside idk the exact portion it takes up im just eyeballing*/       
+    padding: 20px;  
+    text-align: center;           /*center the text*/          
+    background-color: var(--accent-background)   
+}
+
+
+article {
+    width: 70%; /* Width for the article section */
+    padding: 20px; /* Padding inside the article */
+}
+
+/* Profile picture styles */
+.profile {
+    border-radius: 100%; /* Makes it a circle */
+    width: 15rem; /* 15 rem wide */
+    height: 15rem; /* 15 rem tall */
+}
+
+/* Logo styles */
+.logo {
+    width: 2rem; /* 2 rem wide */
+    height: 2rem; /* 2 rem tall */
+    padding: 0.5rem; /* Adds padding around the logo */
+}
+
+/* Social links styles */
+ul {
+    list-style: none; /* Removes bullet points */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Use flexbox to align items in a row */
+    gap: 10px; /* Space between logos */
+}
+
+
+ul.tags {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-top: 20px; /* Space above the list */
+    margin-bottom: 20px; /* Space below the list */
+    padding-left: 0;
+}
+
+ul.tags li {
+    border-radius: 10px;
+    background-color: #ccc;
+    padding: 4px;
+}
+
+header ul li {
+    border-radius: 10px; /* Rounded corners for the list items */
+    background-color: var(--gray); 
+    padding: 4px 10px; /* Padding around the list items */
+    display: inline-block;
+}
+/* colors for individual things */
+time{
+    color: darkgray;
+}
+.secondary{
+    color: gray; /*color 1*/
+}
+
+.primary{
+    color: #54a0ff;  /*color 2*/
+}
+header h1 {
+    color: var(--accent-text); 
+}
+
+nav {
+    display: flex;                              /* Enables flexbox on the nav */
+    justify-content: flex-end;                  /* Aligns items to the right */
+    padding: 10px;                              /* Adds padding around the nav */
+}
+
+nav ul li {
+    margin-left: 20px;                           /* Adds space between the stupid section */
+}
+
+nav ul a {
+    color: var(--accent-background-text);        /* Set link color */
+    text-decoration: none;                        /* Removes underline from links */
+}
